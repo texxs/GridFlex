@@ -1,0 +1,39 @@
+.card  {
+  display:flex;
+  flex-direction: column;    
+  flex-wrap:nowrap;
+  margin: .5em 1em;
+  padding: 0 .5em;
+  background-color: rgba(111, 00, 00, 0.6);
+  height: 333px;
+}
+
+.card img  {
+    width:100%;
+    height:auto;
+}
+#card1 {
+  float:left;
+  margin:1em;
+  background-color: rgba(111, 00, 00, 0.6);
+
+}
+#card2 {
+  margin 1em auto;
+  background-color: rgba(111, 00, 00, 0.6);
+}
+#card3 {
+  float: right;
+  margin 1em;
+  background-color: rgba(111, 00, 00, 0.6);
+}
+
+.card .lead  {
+    background-color: :#fff;
+    color:#333;
+    font-weight:600;
+}
+.card .smallText  {
+    font-size: small;
+    font-weight:300;
+}

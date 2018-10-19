@@ -1,0 +1,101 @@
+/*  Styles  try 2  */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans');
+
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+
+
+
+* {box-sizing: border-box;}
+
+
+body {
+  background: #DBBEA1;
+}
+
+html,body{
+  margin: 0rem;
+  line-height: 1.15;
+  background-color: #f3f3f3;  
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6  {  
+  font-family: 'Nunito', sans-serif;
+  color:#222;
+}
+
+.navTop  {
+
+}
+.nav  {	
+  background-color:#DB7F67;
+  padding:.5em;
+  color:#E8D5C3;
+}
+
+
+/*   The Main Grid    */
+#mainContent  {	
+	  margin:50px auto 0px auto;
+	  width:88%;
+	  max-width:1600px;
+	  min-width:800px;
+	  background-color: #A37B73;
+	  color:#3F292B;
+      padding-left:1em;
+}
+
+.mainGrid  {
+	  height:100%;
+	  display:grid;
+	  grid-template-columns: repeat (12, 1fr);
+	  grid-template-rows: 150px 1fr 150px;
+	  grid-gap:10px;
+	  grid-template-areas: 
+	  "h h h h h h h h h h h h"
+	  "c c c c c c c c c s s s"
+	  "f f f f f f f f f f f f";
+}
+
+/*  Grid Items  */
+.header  {
+	color:#E8D5C3;
+	grid-area: h;
+  padding-left:1em;
+}
+.header h1  {
+	color:#E8D5C3;
+	margin-top: .75em;
+}
+
+.content  {
+  grid-area: c;
+  background-color:#E8D5C3;
+  color:#3F292B;
+  min-height:550px;
+  padding-left:1em;
+}
+.cardHolder  {
+    display:grid;
+    grid-template-rows: 255px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
+    width:95%;
+    border:1px solid #000;
+}
+.sidebar  {
+  grid-area: s;
+  background-color: #D34F73;
+  padding-left:1em;
+}
+.footer  {
+  grid-area: f;
+  background-color:#3F292B;
+  color:#E8D5C3;
+  padding-left:1em;
+}
